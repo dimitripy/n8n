@@ -1,28 +1,52 @@
-node_modules
-.DS_Store
-.tmp
-tmp
-dist
-coverage
+# Node
+node_modules/
+**/package-lock.json
 npm-debug.log*
 yarn.lock
-google-generated-credentials.json
-_START_PACKAGE
-.env
+
+# IDE
+.DS_Store
+.idea
 .vscode/*
 !.vscode/extensions.json
 !.vscode/settings.default.json
-.idea
-nodelinter.config.json
-**/package-lock.json
+
+# Build & Temp
+.tmp/
+tmp/
+dist/
+coverage/
+_START_PACKAGE
 packages/**/.turbo
 .turbo
 *.tsbuildinfo
 *.swp
-CHANGELOG-*.md
-*.mdx
+*.0x
+
+# Logs & Databases
+*.log
+*.journal
 build-storybook.log
+test-results.json
 *.junit.xml
 junit.xml
-test-results.json
-*.0x
+*.sqlite
+*.backup
+
+# Security & Credentials
+.env
+google-generated-credentials.json
+gcp-oauth.keys.json
+nodelinter.config.json
+
+# n8n specific
+n8n_data/
+
+
+# Traefik
+traefik/acme.json
+traefik/logs/
+
+# Documentation
+CHANGELOG-*.md
+*.mdx
