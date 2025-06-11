@@ -44,9 +44,11 @@ n8n_data/
 
 
 # Traefik
-traefik/acme.json
+traefik/
 traefik/logs/
 
 # Documentation
 CHANGELOG-*.md
 *.mdx
+
+mcp/.gdrive-server-credentials.json
